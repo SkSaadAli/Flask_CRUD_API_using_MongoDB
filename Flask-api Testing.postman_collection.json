@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5718f504-126e-443b-abfc-3122a12d96e1",
+		"_postman_id": "f9d451db-df9a-45e5-9f21-df1991354caf",
 		"name": "Flask-api Testing",
 		"description": "Testing flask api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
@@ -77,7 +77,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{  \r\n\r\n  \"_id\": 1,\r\n  \"name\": \"Saad\",\r\n  \"email\": \"saad@example.com\",\r\n  \"password\": \"pwd\"\r\n}\r\n",
+					"raw": "{  \r\n\r\n  \"id\": 1,\r\n  \"name\": \"Saad\",\r\n  \"email\": \"saad@example.com\",\r\n  \"password\": \"pwd\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,7 +114,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{   \"_id\": 1,\r\n    \"name\": \"Sk Saad Ali\",\r\n    \"email\": \"saad@email.com\",\r\n    \"password\": \"newpassword\"\r\n}\r\n",
+					"raw": "{   \"id\": 1,\r\n    \"name\": \"Sk Saad Ali\",\r\n    \"email\": \"saad@email.com\",\r\n    \"password\": \"newpassword\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -170,9 +170,9 @@
 				}
 			],
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": [],
-				"url": "{{base_url}}/users/delete/{{user_id}}"
+				"url": "{{base_url}}/users/{{user_id}}"
 			},
 			"response": []
 		}
